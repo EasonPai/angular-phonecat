@@ -11,7 +11,10 @@ describe('PhoneCat controllers', function() {
       var scope = {},
           ctrl = $controller('PhoneListCtrl', {$scope:scope});
 
-      expect(scope.phones.length).toBe(3);
+        // 故意製造測試錯誤
+      expect(scope.phones.length).toBe(2);
+        // 正確結果
+        // expect(scope.phones.length).toBe(3);
     }));
 
   });
