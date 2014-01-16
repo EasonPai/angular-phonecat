@@ -1,32 +1,39 @@
-
 <!doctype html>
-<html lang="en" ng-app="phonecatApp">
-
+<html lang="en" ng-app="phonecatApp"  ng-controller="PhoneListCtrl">
 <head>
-    <meta charset="utf-8">
-    <title>Google Phone Gallery</title>
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <script src="lib/angular/angular.js"></script>
-    <script src="js/controllers.js"></script>
+  <meta charset="utf-8">
+    
+<!--  ng-bind-template   -->
+    <title ng-bind-template="Google Phone Gallery: {{query}}">Google Phone Gallery</title>
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="lib/angular/angular.js"></script>
+  <script src="js/controllers.js"></script>
 </head>
+<body>
 
-<body ng-controller="PhoneListCtrl">
-<p>Hello, {{name}}!</p>
-    <ul>
-        <li ng-repeat="phone in phones">
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="span2">
+        <!--Sidebar content-->
+
+        Search: <input ng-model="query">
+
+      </div>
+      <div class="span10">
+        <!--Body content-->
+
+        <ul class="phones">
+          <li ng-repeat="phone in phones | filter:query">
             {{phone.name}}
             <p>{{phone.snippet}}</p>
-            <p>Total number of phones: {{phones.length}}</p>
-        </li>
-    </ul>
+          </li>
+        </ul>
 
-    <table>
-      <tr><th>row number</th></tr>
-      <tr ng-repeat="i in [0, 1, 2, 3, 4, 5, 6, 7]"><td>{{i+1}}</td></tr>
-    </table>
-    
+      </div>
+        
+    </div>
+  </div>
+
 </body>
-
 </html>
-
