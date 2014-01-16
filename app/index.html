@@ -37,5 +37,18 @@
     </div>
   </div>
 
+    <p/>
+    Awesome json filter :
+    ( limiting the number of phones to the first 5 in the list)
+    <p>
+        {{phones | json  }}
+    </p>
+    
+    <p/>
+    test filter, filter is not working:
+    <p>
+        {{phones | json  | filter:"name" }} 
+    </p>
+    
 </body>
 </html>
