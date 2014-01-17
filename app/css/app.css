@@ -77,3 +77,97 @@ ul.specs dt {
 h1 {
   border-bottom: 1px solid gray;
 }
+
+ body {
+   padding-left: 0;
+   padding-right: 0;
+ }
+ #page-wrapper {
+   position: relative;
+   width: 980px;
+   /* centers the document */
+   margin: 0 auto;
+   /*
+  hides anything drawn off canvas.
+  remove overflow and height to see things drawn off canvas.
+  */
+   overflow: hidden;
+   height: 1000px;
+ }
+ /* This makes absolutely positioned elements like p, h1,
+     and some bootstrap elements placed properly. */
+ #absolute-wrapper p, #absolute-wrapper h1, #absolute-wrapper h2, #absolute-wrapper h3, #absolute-wrapper h4, #absolute-wrapper h5, #absolute-wrapper h6 {
+   margin-top: 0 !important;
+ }
+ /* Set floating dom-heading margins to 0 */
+ [class*="dom-heading"] {
+   margin: 0;
+ }
+ #absolute-wrapper {
+   position: relative;
+   width: 980px;
+   margin: 0 auto;
+   height: 1px;
+ }
+ #absolute-wrapper .rectangle.rectangle-1 {
+   background: #ddeaf3;
+ }
+ #absolute-wrapper .rectangle {
+   -moz-box-shadow: none;
+   -webkit-box-shadow: none;
+   -o-box-shadow: none;
+   box-shadow: none;
+   border-radius: 0px;
+   border: none;
+   position: absolute;
+ }
+ #absolute-wrapper .rectangle.rectangle-2 {
+   top: 43px;
+ }
+ #absolute-wrapper .rectangle.rectangle-3 {
+   background: #80ccff;
+ }
+ #absolute-wrapper .rectangle.rectangle-4 {
+   width: 288px;
+   height: 261px;
+   left: 647px;
+ }
+ #absolute-wrapper .rectangle.rectangle-1.rectangle-2.rectangle-4 .rectangle.rectangle-3 {
+   width: 89px;
+   height: 76px;
+   top: 11px;
+   left: 11px;
+ }
+ #absolute-wrapper .rectangle.rectangle-2.rectangle-3 {
+   width: 306px;
+   height: 262px;
+   left: 328px;
+ }
+ #absolute-wrapper .dom-heading {
+   font-family:"Arial";
+   position: absolute;
+ }
+ #absolute-wrapper .dom-heading.dom-heading-1 {
+   width: 239px;
+   height: 257px;
+   top: 44px;
+   left: 58px;
+ }
+ #absolute-wrapper .rectangle.rectangle-1.rectangle-5 {
+   width: 879px;
+   height: 214px;
+   top: 313px;
+   left: 56px;
+ }
+ #absolute-wrapper .rectangle.rectangle-1.rectangle-5 .dom-heading.dom-heading-2 {
+   width: 162px;
+   height: 40px;
+   top: 11px;
+   left: 17px;
+ }
+ #absolute-wrapper .rectangle.rectangle-1.rectangle-5 .dom-heading.dom-heading-3 {
+   width: 840px;
+   height: 137px;
+   top: 57px;
+   left: 19px;
+ }
