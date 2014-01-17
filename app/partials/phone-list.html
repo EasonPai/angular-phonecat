@@ -1,5 +1,26 @@
+
 <div class="container-fluid">
-  <div class="row-fluid">
+    <div class="row-fluid">
+        <div class="span2">
+            
+        <input ng-model="userInput" class="dom-heading dom-heading-1 dom-heading-3">
+        <h1 class="dom-heading dom-heading-2 dom-heading-4">result:</h1>
+        <h1 class="dom-heading dom-heading-1 dom-heading-2">{{ userInput | uppercase }}</h1>
+            </div>
+    </div>
+  
+    <div class="row-fluid">
+        <div class="span2">
+        <h1 class="dom-heading">"lower cap string" | uppercase ----------- {{ "lower cap string" | uppercase }} <br/>
+        {foo: "bar", baz: 23} | json ----------- {{ {foo: "bar", baz: 23} | json }}  <br/>
+        1304375948024 | date ----------- {{ 1304375948024 | date }}  <br/>
+        1304375948024 | date:"MM/dd/yyyy @ h:mma"----------- {{ 1304375948024 | date:"MM/dd/yyyy @ h:mma" }}  <br/>
+        1304375948024 | date:"yyyy/MM/dd" ----------- {{ 1304375948024 | date:"yyyy/MM/dd"  }}  <br/></h1>
+    </div></div>
+</div>
+
+
+
     <div class="span2">
       <!--Sidebar content-->
 
@@ -22,6 +43,4 @@
         </li>
       </ul>
 
-    </div>
   </div>
-</div>
