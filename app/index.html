@@ -13,6 +13,9 @@
 <body>
 
   <div ng-view></div>
-
+    
+<!--    Try to add an {{orderProp}} binding to index.html, and you'll see that nothing happens even when you are in the phone list view. This is because the orderProp model is visible only in the scope managed by PhoneListCtrl, which is associated with the <div ng-view> element. If you add the same binding into the phone-list.html template, the binding will work as expected.-->
+ {{orderProp}} 
+    
 </body>
 </html>
